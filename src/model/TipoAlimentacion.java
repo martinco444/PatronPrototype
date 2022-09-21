@@ -1,5 +1,9 @@
 package model;
 
-public class TipoAlimentacion {
-
+public enum TipoAlimentacion {
+	Gasolina,
+	Diesel,
+	Electrico,
+	Agua,
+	ninguno
 }

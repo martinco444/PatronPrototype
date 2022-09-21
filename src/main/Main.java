@@ -16,17 +16,19 @@ public class Main {
         TipoAlimentacion alimentacion = TipoAlimentacion.Gasolina;
         int cantidadAlas= 2;
 
-        Aereo avion = new Aereo(cantidadAlas, alimentacion, marca, modelo, cantidadPasajeros);
+        Aereo avion = new Aereo(alimentacion, marca, modelo, cantidadPasajeros,cantidadAlas);
 
-        Aereo clonAereo = avion.clonar();
+        Aereo clonAereo = avion.clon();
 
         int numeroHelices = 3;
-        Agua lancha = new Agua(numeroHelices, alimentacion, marca, modelo, cantidadPasajeros);
+        Agua lancha = new Agua(alimentacion, marca, modelo, cantidadPasajeros, numeroHelices);
 
-        Agua clonAgua = lancha.clonar();
+        Agua clonAgua = lancha.clon();
 
         int cantidadLlantas = 4;
-        Terrestre carro = new Terrestre(cantidadLlantas, alimentacion, modelo, marca, cantidadPasajeros);
+        Terrestre carro = new Terrestre(alimentacion, modelo, marca, cantidadPasajeros, cantidadLlantas);
+
+        Terrestre clonTerrestre = carro.clon();
 
 
     }
