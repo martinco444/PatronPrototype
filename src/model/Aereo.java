@@ -13,6 +13,13 @@ public class Aereo extends MedioTransporte{
         return clonAereo;
     }
 
+    @Override
+    public String toString() {
+        return "Aereo: cantidadAlas " + cantidadAlas + ", alimentacion " + alimentacion + ", marca "+ marca + ", modelo " + modelo + ", cantidad de pasajeros " + cantidadPasajeros + ", cantidad de alas " + cantidadAlas;
+    }
+
+    
+
 
     
 }

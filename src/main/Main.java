@@ -30,6 +30,13 @@ public class Main {
 
         Terrestre clonTerrestre = carro.clon();
 
+        carro.setCantidadLlantas(7);
+        clonTerrestre.setCantidadLlantas(4);
+
+        System.out.println(carro.toString());
+        System.out.println(clonTerrestre.toString());
+        
+
 
     }
     
