@@ -20,7 +20,7 @@ public class Aereo extends MedioTransporte{
 
     @Override
     public String toString() {
-        return "Aereo: cantidadAlas " + cantidadAlas + ", alimentacion " + alimentacion + ", marca "+ marca + ", modelo " + modelo + ", cantidad de pasajeros " + cantidadPasajeros + ", cantidad de alas " + cantidadAlas;
+        return "Aereo: cantidad de Alas " + cantidadAlas + ", alimentacion " + alimentacion + ", marca "+ marca + ", modelo " + modelo + ", cantidad de pasajeros " + cantidadPasajeros ;
     }
 
 

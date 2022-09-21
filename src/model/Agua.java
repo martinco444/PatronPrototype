@@ -22,9 +22,9 @@ public class Agua extends MedioTransporte{
 
     @Override
     public String toString() {
-        return "Agua: cantidadHelices " + cantidadHelices + ", alimentacion " + alimentacion + ", marca "+ marca + ", modelo " + modelo + ", cantidad de pasajeros " + cantidadPasajeros + ", cantidad de helices " + cantidadHelices;
+        return "Agua: cantidad de Helices " + cantidadHelices + ", alimentacion " + alimentacion + ", marca "+ marca + ", modelo " + modelo + ", cantidad de pasajeros " + cantidadPasajeros;
     }
-    
+
  }
 
 

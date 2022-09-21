@@ -14,7 +14,10 @@ public class Main {
         String modelo = "2020";
         String marca = "volvo";
         TipoAlimentacion alimentacion = TipoAlimentacion.Gasolina;
-        int cantidadAlas= 2;
+        int cantidadAlas = 0;
+
+        
+        System.out.println("--------");
 
         Aereo avion = new Aereo(alimentacion, marca, modelo, cantidadPasajeros,cantidadAlas);
 
@@ -23,23 +26,39 @@ public class Main {
         avion.setCantidadAlas(2);
         clonAereo.setCantidadAlas(4);
 
-        System.out.println(avion.toString());
-        System.out.println(clonAereo.toString());
+        System.out.println("Original: " + avion.toString());
+        System.out.println("Clon: " + clonAereo.toString());
 
-        Agua lancha = new Agua(alimentacion, marca, modelo, cantidadPasajeros, numeroHelices);
+        System.out.println("--------");
+
+        int cantidadHelices= 0;
+
+        Agua lancha = new Agua(alimentacion, marca, modelo, cantidadPasajeros, cantidadHelices);
 
         Agua clonAgua = lancha.clon();
 
-        int cantidadLlantas = 4;
-        Terrestre carro = new Terrestre(alimentacion, modelo, marca, cantidadPasajeros, cantidadLlantas);
+        lancha.setCantidadHelices(3);
+        clonAgua.setCantidadHelices(5);
+
+        System.out.println("Original: " + lancha.toString());
+        System.out.println("Clon: " + clonAgua.toString());
+
+        
+        System.out.println("--------");
+
+        int cantidadLlantas= 0;
+        Terrestre carro = new Terrestre(alimentacion, marca, modelo,  cantidadPasajeros, cantidadLlantas);
 
         Terrestre clonTerrestre = carro.clon();
 
         carro.setCantidadLlantas(7);
         clonTerrestre.setCantidadLlantas(4);
 
-        System.out.println(carro.toString());
-        System.out.println(clonTerrestre.toString());
+        System.out.println("Original: " + carro.toString());
+        System.out.println("Clon: " + clonTerrestre.toString());
+
+        
+        System.out.println("--------");
         
 
 
