@@ -20,7 +20,12 @@ public class Main {
 
         Aereo clonAereo = avion.clon();
 
-        int numeroHelices = 3;
+        avion.setCantidadAlas(2);
+        clonAereo.setCantidadAlas(4);
+
+        System.out.println(avion.toString());
+        System.out.println(clonAereo.toString());
+
         Agua lancha = new Agua(alimentacion, marca, modelo, cantidadPasajeros, numeroHelices);
 
         Agua clonAgua = lancha.clon();
