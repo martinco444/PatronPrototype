@@ -50,4 +50,9 @@ public class MedioTransporte{
 		this.cantidadPasajeros = cantidadPasajeros;
 	}
 
+	public MedioTransporte clon(){
+		MedioTransporte MedioTransporte = new MedioTransporte (alimentacion, marca, modelo, cantidadPasajeros);
+		return MedioTransporte;
+	}
+
 }
