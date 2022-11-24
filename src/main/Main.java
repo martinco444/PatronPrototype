@@ -1,5 +1,3 @@
-import java.util.Scanner;
-import model.MedioTransporte;
 import model.Agua;
 import model.Aereo;
 import model.Terrestre;

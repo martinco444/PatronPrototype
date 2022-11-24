@@ -1,7 +1,5 @@
 package model;
 
-import model.TipoAlimentacion;
-
 public class MedioTransporte{
 
 	public TipoAlimentacion alimentacion;
