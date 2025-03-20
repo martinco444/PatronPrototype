@@ -1,3 +1,5 @@
+package main;
+
 import model.Agua;
 import model.Aereo;
 import model.Terrestre;
@@ -18,7 +20,6 @@ public class Main {
         System.out.println("--------");
 
         Aereo avion = new Aereo(alimentacion, marca, modelo, cantidadPasajeros,cantidadAlas);
-
         Aereo clonAereo = avion.clon();
 
         avion.setCantidadAlas(2);
@@ -35,8 +36,8 @@ public class Main {
 
         Agua clonAgua = lancha.clon();
 
-        lancha.setCantidadHelices(3);
-        clonAgua.setCantidadHelices(5);
+        lancha.setCantidadHelices(4);
+        clonAgua.setCantidadHelices(8);
 
         System.out.println("Original: " + lancha.toString());
         System.out.println("Clon: " + clonAgua.toString());
